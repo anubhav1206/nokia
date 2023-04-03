@@ -1,1 +1,61 @@
 /* below the fold CSS goes here */
+
+@font-face {
+    font-family: NokiaPureHeadline;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url('/fonts/nokiapureheadline_regular.eot');
+    src: url('/fonts/nokiapureheadline_regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/fonts/nokiapureheadline_regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/fonts/nokiapureheadline_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/nokiapureheadline_regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: NokiaPureHeadline;
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url('/fonts/nokiapureheadline_light.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/nokiapureheadline_light.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/fonts/nokiapureheadline_light.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/fonts/nokiapureheadline_light.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/nokiapureheadline_light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: NokiaPureHeadline;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('/fonts/nokiapureheadline_bold.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/nokiapureheadline_bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/fonts/nokiapureheadline_bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/fonts/nokiapureheadline_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/nokiapureheadline_bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: NokiaPureHeadlineLight;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url('/fonts/nokiapureheadline_light.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/nokiapureheadline_light.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/fonts/nokiapureheadline_light.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/fonts/nokiapureheadline_light.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/nokiapureheadline_light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: NokiaPureHeadlineUltralight;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url('/fonts/nokiapureheadline_ultralight.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/nokiapureheadline_ultralight.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/fonts/nokiapureheadline_ultralight.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/fonts/nokiapureheadline_ultralight.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/nokiapureheadline_ultralight.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
