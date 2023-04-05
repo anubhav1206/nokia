@@ -12,18 +12,33 @@
 
 
  :root {
+  /* global colors */
+  --global-color-black: #000;
+  --global-color-white: #fff;
+
   /* colors */
   --link-color: #0065ed;
   --link-hover-color: #0065ed;
   --background-color: #fff;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
+  --footer-background-color: #F9F9F9;
   --text-color: #1d1e20;
+  --font-text-color: #666;
+  
 
   /* fonts */
   --body-font-family: 'NokiaPureHeadline', arial, helvetica, sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+
+   /* font weights */
+   --font-weight-thin: 300;
+   --font-weight-regular: 400;
+   --font-weight-bold: 500;
+   --font-weight-bolder: 600;
+   --font-weight-boldest: 700;
+   --font-weight-heavy: 900;
 
   /* body sizes */
   --body-font-size-m: 24px;
