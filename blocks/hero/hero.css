@@ -1,24 +1,175 @@
-/* block specific CSS goes here */
-
 main .hero-container > div {
   max-width: unset;
 }
-  
-main .hero-container {
-  padding: 0;
-}
-  
-main .hero {
+
+main .hero.block {
   position: relative;
-  padding: 32px;
-  min-height: 300px;
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  main .hero.block .two-column-hero.title-image-container .info {
+    max-width: 75%;
+    height: 100%;
+    justify-content: center;
+    flex: 0 0 75%;
+  }
+
+  main .hero.block .title-image-container  {
+    align-items: center;
+  }
+
+  main .hero.block  .title-image-container .info h1 {
+    font-size: var(--heading-font-size-xxl);
+    line-height: 120%;
+    letter-spacing: 0.18px
+  }
+
+  main .hero.block .two-column-hero.title-image-container .left-col {
+    max-width: 50%;
+    padding: 48px 0;
+    flex-direction: column;
+    left:0;
+    flex: 0 1 50%;
+  }
+
+  main .hero.block .two-column-hero.title-image-container .right-col {
+    height: 100%;
+    margin-right:calc((-100vw + 100%) / 2);
+    left: calc(50% - 50px);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+  }
+
+  main .hero a.button {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  main .hero .title-image-container picture {
+    margin: 0 calc((-100vw + 100%) / 2);
+  }
+  
+  main .hero .title-image-container {
+    flex-direction: column;
+  }
+
+  main .hero .title-image-container .right-col img {
+    object-fit: contain
+  }
+
+  main .hero.block .two-column-hero.title-image-container .left-col {
+    width: 100%;
+  }
+
+  main .hero .right-col {
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) {
+  .two-column-hero.title-image-container {
+    height:410px
+  }
+
+  main .hero .right-col img {
+    object-position: top left;
+  }
+
+  main .hero .info p {
+    font-size: var(--heading-font-size-l);
+    letter-spacing: 0.36px;
+  }
+}
+
+@media (min-width: 990px) and (max-width:1024px) {
+  main .hero.block .two-column-hero.title-image-container .info {
+    flex: 0 0 66%;
+    max-width: 66%;
+    padding: 65px 16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  main .hero.block  .title-image-container .info {
+    flex: 0 0 66%;
+    max-width: 66%;
+    padding: 75px 0
+  }
+}
+
+@media (min-width: 1366px) {
+  .two-column-hero.title-image-container {
+    height:600px
+  }
+
+  main .hero.block .two-column-hero.title-image-container .info {
+    flex: 0 0 83.3333%;
+    max-width: 83.3333%;
+    padding:96px 16px;
+  }
+
+  main .hero.block .title-image-container .info h1 {
+    font-size:60px;
+  }
+
+  main .hero .info p {
+    margin-top: 24px;
+    font-size: var(--heading-font-size-xl);
+    line-height: 130%;
+  }
+}
+
+@media (min-width: 1920px) {
+  main .hero .title-image-container .right-col img {
+    object-fit: contain
+  }
+}
+
+main .hero  .title-image-container  {
+  display: flex;
+  padding: 0 16px;
+  flex: 0 0 100%;
+  margin: 0 auto;
+  max-width: 1376px;
+  width: calc(100% - 32px);
+  z-index: 10;
 }
 
 main .hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   color: white;
+  margin-right: auto;
+  left :0;
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 100%;
+  align-items: center;
+  z-index: 10
+}
+
+.gradient-default::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right,rgba(0 22 46 / 65%) 0%,rgba(0 22 46 / 0%) 70%);
+  z-index: 2;
+  content: "";
+}
+
+main .section.hero-container {
+  padding: 0;
+  overflow-x: hidden
 }
 
 main .hero picture {
@@ -28,12 +179,138 @@ main .hero picture {
   left: 0;
   bottom: 0;
   right: 0;
-  object-fit: cover;
   box-sizing: border-box;
+}
+
+main .hero.block .title-image-container div.info {
+  padding: 32px 16px;
+}
+
+main .hero .two-column-hero.title-image-container picture {
+  position: relative;
+  margin: 0;
 }
 
 main .hero img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  object-position: center;
+}
+
+main .hero a.button {
+  margin-top: 32px;
+  padding: 10px 18px;
+  border-radius: 4px;
+  border: solid 1px var(--link-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 135%;
+  letter-spacing: 0.54px;
+}
+
+main .hero .info p {
+  color: var(--background-color);
+}
+
+main .hero .right-col {
+  text-align: center;
+  max-width: 800px;
+}
+
+main .hero [class*="-col"]{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+main .hero .right-col > div {
+  display: flex;
+  justify-content: center;
+}
+
+main .hero .right-col .video-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 100%;
+  align-items: center;
+  z-index: 10;
+}
+
+main .hero .right-col .video-placeholder > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+main .hero .right-col .video-placeholder picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  object-position: center;
+}
+
+main .hero .right-col .video-placeholder-play button {
+  position: relative;
+  display: block;
+  background: none;
+  transform: scale(2);
+  border: none;
+  padding: 0;
+}
+
+.gradient-red-orange {
+  /* background-image: url(https://www.nokia.com/themes/custom/onenokia_reskin/img/gradients/red-orange-d.jpg); */
+  background: linear-gradient(90deg, rgb(132 15 3) 20%, rgb(249 171 99));
+
+  &::before {
+    background: linear-gradient(90deg, rgb(117 0 3) 20%, rgb(249 110 129));
+  }
+}
+
+.gradient-orange-yellow {
+  background: linear-gradient(90deg, rgb(177 101 14) 50%, rgba(254 230 113) 100%);
+
+  &::before {
+    background: linear-gradient(90deg, rgb(146 45 7) 50%, rgb(254 163 107) 100%);
+  }
+}
+
+.gradient-blue-green {
+  background: linear-gradient(90deg, rgb(9 55 9) 20%, rgb(130 226 196) 100%);
+
+  &::before {
+    background: linear-gradient(90deg, rgb(12 41 138) 20%, rgb(164 202 245) 100%);
+  }
+}
+
+main [class*=" gradient-"] {
+  &::before {
+    position: absolute;
+    content:"";
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+    right: 0;
+    mask-image: linear-gradient(to bottom, black, transparent);
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-mask-image: linear-gradient(to bottom , black, transparent);
+  }
+}
+
+.gradient-pink-red {
+  background: linear-gradient(90deg, rgb(84 13 17) 30%, rgba(254 196 195 / 100%) 100%);
+
+  &::before{
+    background: linear-gradient(90deg, rgb(122 10 103) 20%, rgb(221 78 236) 100%);
+  }
 }

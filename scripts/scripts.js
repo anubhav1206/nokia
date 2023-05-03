@@ -21,11 +21,13 @@ window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information 
  * @param {Element} main The container element
  */
 function buildHeroBlock(main) {
+  const heroBlock = main.querySelector('.hero');
   const h1 = main.querySelector('h1');
   const picture = main.querySelector('picture');
-  // eslint-disable-next-line no-bitwise
-  if (h1 && picture && (h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
-    const section = document.createElement('div');
+  const section = document.createElement('div');
+  if (!heroBlock && h1 && picture
+      && (h1.compareDocumentPosition(picture) === Node.DOCUMENT_POSITION_PRECEDING)) {
+    // eslint-disable-next-line no-bitwise
     section.append(buildBlock('hero', { elems: [picture, h1] }));
     main.prepend(section);
   }
