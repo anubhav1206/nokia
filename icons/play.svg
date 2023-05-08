@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-  <g id="Group_124" transform="translate(-162 -101)">
-    <circle id="Ellipse_4" cx="24" cy="24" r="24" transform="translate(162 101)" fill="#fff"></circle>
-    <path id="Path_11" d="M15,12l11.283,7.522L15,27.044Z" transform="translate(167.408 106.211)" fill="#0065ed"></path>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g id="Group_124" transform="translate(-162 -101)"><circle id="Ellipse_4" cx="24" cy="24" r="24" fill="#fff" transform="translate(162 101)"/><path id="Path_11" fill="#0065ed" d="M15,12l11.283,7.522L15,27.044Z" transform="translate(167.408 106.211)"/></g></svg>
